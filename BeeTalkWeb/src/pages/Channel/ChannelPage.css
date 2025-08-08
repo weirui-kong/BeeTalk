@@ -1,0 +1,166 @@
+.channel-page {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.page-header {
+  margin-bottom: 32px;
+}
+
+.page-header h2 {
+  margin: 0 0 8px 0;
+  color: #333;
+  font-size: 1.75rem;
+}
+
+.page-header p {
+  margin: 0;
+  color: #666;
+  font-size: 1rem;
+}
+
+.add-channel-section {
+  background: white;
+  padding: 24px;
+  border-radius: 8px;
+  border: 1px solid #e1e5e9;
+  margin-bottom: 32px;
+}
+
+.add-channel-section h3 {
+  margin: 0 0 16px 0;
+  color: #333;
+  font-size: 1.25rem;
+}
+
+.add-channel-form .form-group {
+  display: flex;
+  gap: 12px;
+  align-items: stretch;
+}
+
+.channel-input {
+  flex: 1;
+  padding: 12px 16px;
+  border: 1px solid #dcdfe6;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border-color 0.2s ease;
+}
+
+.channel-input:focus {
+  outline: none;
+  border-color: #409eff;
+}
+
+.channel-input:disabled {
+  background-color: #f5f7fa;
+  color: #c0c4cc;
+}
+
+.add-button {
+  padding: 12px 24px;
+  background-color: #409eff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.add-button:hover:not(:disabled) {
+  background-color: #337ecc;
+}
+
+.add-button:disabled {
+  background-color: #c0c4cc;
+  cursor: not-allowed;
+}
+
+.channels-section h3 {
+  margin: 0 0 20px 0;
+  color: #333;
+  font-size: 1.25rem;
+}
+
+.channels-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 16px;
+}
+
+.empty-channels {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 60px 20px;
+  color: #999;
+}
+
+.channel-card {
+  background: white;
+  border: 1px solid #e1e5e9;
+  border-radius: 8px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.2s ease;
+}
+
+.channel-card:hover {
+  border-color: #409eff;
+  box-shadow: 0 2px 8px rgba(64, 158, 255, 0.15);
+}
+
+.channel-info h4 {
+  margin: 0 0 4px 0;
+  color: #333;
+  font-size: 1.1rem;
+  font-family: monospace;
+}
+
+.channel-meta {
+  margin: 0;
+  color: #999;
+  font-size: 0.875rem;
+}
+
+.channel-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.action-button {
+  padding: 6px 12px;
+  border: 1px solid #dcdfe6;
+  border-radius: 4px;
+  background: white;
+  color: #606266;
+  text-decoration: none;
+  font-size: 0.875rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.action-button:hover {
+  border-color: #409eff;
+  color: #409eff;
+}
+
+.action-button.view {
+  background-color: #409eff;
+  color: white;
+  border-color: #409eff;
+}
+
+.action-button.view:hover {
+  background-color: #337ecc;
+}
+
+.loading {
+  text-align: center;
+  padding: 40px;
+  color: #666;
+}

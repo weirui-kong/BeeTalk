@@ -1,0 +1,266 @@
+.file-transfer-page {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.page-header {
+  margin-bottom: 32px;
+}
+
+.page-header h2 {
+  margin: 0 0 8px 0;
+  color: #333;
+  font-size: 1.75rem;
+}
+
+.page-header p {
+  margin: 0;
+  color: #666;
+  font-size: 1rem;
+}
+
+.upload-config {
+  background: white;
+  padding: 24px;
+  border-radius: 8px;
+  border: 1px solid #e1e5e9;
+  margin-bottom: 24px;
+}
+
+.config-row {
+  display: flex;
+  gap: 20px;
+  align-items: end;
+}
+
+.form-group {
+  flex: 1;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 6px;
+  color: #333;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+.select-input,
+.text-input {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #dcdfe6;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border-color 0.2s ease;
+}
+
+.select-input:focus,
+.text-input:focus {
+  outline: none;
+  border-color: #409eff;
+}
+
+.upload-area {
+  border: 2px dashed #dcdfe6;
+  border-radius: 8px;
+  padding: 60px 40px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  background-color: #fafbfc;
+  margin-bottom: 24px;
+}
+
+.upload-area:hover {
+  border-color: #409eff;
+  background-color: #f0f9ff;
+}
+
+.upload-area.drag-active {
+  border-color: #409eff;
+  background-color: #e6f7ff;
+  transform: scale(1.02);
+}
+
+.upload-content {
+  pointer-events: none;
+}
+
+.upload-icon {
+  font-size: 3rem;
+  margin-bottom: 16px;
+}
+
+.upload-text {
+  margin: 0 0 8px 0;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.upload-hint {
+  margin: 0;
+  color: #999;
+  font-size: 0.9rem;
+}
+
+.upload-queue {
+  background: white;
+  border-radius: 8px;
+  border: 1px solid #e1e5e9;
+  padding: 24px;
+}
+
+.queue-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #e1e5e9;
+}
+
+.queue-header h3 {
+  margin: 0;
+  color: #333;
+  font-size: 1.25rem;
+}
+
+.queue-actions {
+  display: flex;
+  gap: 12px;
+}
+
+.upload-all-button,
+.clear-button {
+  padding: 8px 16px;
+  border: 1px solid #dcdfe6;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.upload-all-button {
+  background-color: #67c23a;
+  color: white;
+  border-color: #67c23a;
+}
+
+.upload-all-button:hover:not(:disabled) {
+  background-color: #5daf34;
+}
+
+.upload-all-button:disabled {
+  background-color: #c0c4cc;
+  border-color: #c0c4cc;
+  cursor: not-allowed;
+}
+
+.clear-button {
+  background-color: white;
+  color: #606266;
+}
+
+.clear-button:hover {
+  border-color: #409eff;
+  color: #409eff;
+}
+
+.files-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.file-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px;
+  border: 1px solid #e1e5e9;
+  border-radius: 6px;
+  background-color: #fafbfc;
+}
+
+.file-item.success {
+  border-color: #67c23a;
+  background-color: #f0f9ff;
+}
+
+.file-item.error {
+  border-color: #f56c6c;
+  background-color: #fef0f0;
+}
+
+.file-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.file-name {
+  font-weight: 500;
+  color: #333;
+}
+
+.file-size {
+  font-size: 0.875rem;
+  color: #999;
+}
+
+.file-status {
+  margin: 0 16px;
+}
+
+.status-badge {
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.status-badge.pending {
+  background-color: #e1e5e9;
+  color: #606266;
+}
+
+.status-badge.uploading {
+  background-color: #409eff;
+  color: white;
+}
+
+.status-badge.success {
+  background-color: #67c23a;
+  color: white;
+}
+
+.status-badge.error {
+  background-color: #f56c6c;
+  color: white;
+}
+
+.remove-button {
+  width: 24px;
+  height: 24px;
+  border: none;
+  border-radius: 50%;
+  background-color: #f56c6c;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.75rem;
+  transition: background-color 0.2s ease;
+}
+
+.remove-button:hover:not(:disabled) {
+  background-color: #dd4a4a;
+}
+
+.remove-button:disabled {
+  background-color: #c0c4cc;
+  cursor: not-allowed;
+}

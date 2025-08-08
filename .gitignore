@@ -1,0 +1,14 @@
+node_modules/
+.env
+uploads/*
+!uploads/.gitkeep
+data/*
+!data/.gitkeep
+BeeTalkServer/certs/cert.pem
+/BeeTalkServer/uploads/
+/BeeTalkServer/temp/
+/BeeTalkServer/certs/cert.pem
+/BeeTalkServer/certs/key.pem
+/BeeTalkServer/src/data/db.json
+/update-dns.cjs
+/BeeTalkServer/update-dns.cjs

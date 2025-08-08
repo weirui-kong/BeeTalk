@@ -1,0 +1,168 @@
+/* 主布局容器 */
+.main-layout {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background-color: #f8f9fa;
+}
+
+/* 顶部导航栏 */
+.app-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+  background: #ffffff;
+  border-bottom: 1px solid #e1e5e9;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  padding: 0 20px;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.sidebar-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 6px;
+  color: #606266;
+  transition: background-color 0.2s;
+}
+
+.sidebar-toggle:hover {
+  background: #f5f6fa;
+}
+
+.app-title {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #409eff;
+}
+
+.header-center {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.current-channel {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: #f5f6fa;
+  padding: 6px 12px;
+  border-radius: 16px;
+  color: #606266;
+  font-weight: 500;
+}
+
+.channel-icon {
+  color: #8e9297;
+  font-weight: bold;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+}
+
+/* 主要内容区域 */
+.main-content {
+  flex: 1;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+}
+
+/* 内容区域 */
+.content-area {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+  background-color: #ffffff;
+  border-radius: 8px;
+  margin: 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* 移动端适配 */
+@media (max-width: 768px) {
+  .app-header {
+    height: 56px;
+    padding: 0 16px;
+  }
+
+  .sidebar-toggle {
+    display: block;
+  }
+
+  .app-title {
+    font-size: 1.25rem;
+  }
+
+  .current-channel {
+    display: none;
+  }
+
+  .main-content {
+    flex-direction: column;
+  }
+  
+  .content-area {
+    margin: 8px;
+    padding: 16px;
+    border-radius: 6px;
+  }
+}
+
+@media (max-width: 480px) {
+  .app-header {
+    height: 52px;
+    padding: 0 12px;
+  }
+
+  .app-title {
+    font-size: 1.1rem;
+  }
+
+  .content-area {
+    margin: 4px;
+    padding: 12px;
+    border-radius: 4px;
+  }
+}
+
+/* 平板端适配 */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .app-header {
+    padding: 0 16px;
+  }
+
+  .content-area {
+    margin: 12px;
+    padding: 18px;
+  }
+}
+
+/* 大屏幕适配 */
+@media (min-width: 1025px) {
+  .main-content {
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+  
+  .content-area {
+    margin: 20px;
+    padding: 24px;
+  }
+}
