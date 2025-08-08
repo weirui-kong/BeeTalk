@@ -17,5 +17,5 @@ cp -r dist/* ../BeeTalkServer/public/
 
 # Start the server
 echo "Starting server..."
-cd ../BeeTalkServer/src
-node server.js 
+cd ../BeeTalkServer
+node ./src/server.js 
