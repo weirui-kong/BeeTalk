@@ -80,7 +80,6 @@ BeeTalk/
 │   └── uploads/      # 文件上传目录 / File upload directory
 ├── BeeTalkWeb/       # 客户端代码 / Client-side code
 │   ├── src/          # React源码 / React source code
-│   └── public/       # 静态资源 / Static assets
 └── start-server.sh   # 启动脚本 / Startup script
 ```
 
@@ -93,9 +92,6 @@ BeeTalk/
 
 - 如需在公网使用，建议自行添加HTTP Basic Auth或其他认证机制
   If you need to use it on the public internet, it's recommended to add HTTP Basic Auth or other authentication mechanisms
-
-- 请确保在可信任的网络环境中使用
-  Please ensure to use it in a trusted network environment
 
 ## 自定义配置 / Custom Configuration
 
